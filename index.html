@@ -525,6 +525,18 @@ section {
   box-shadow: var(--shadow-hover);
 }
 
+.about-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.about-image:hover .about-photo {
+  transform: scale(1.05);
+}
+
 .about-image::before {
   content: '';
   position: absolute;
@@ -1309,10 +1321,7 @@ footer {
     </div>
     <div class="about-grid">
       <div class="about-image reveal">
-        <div class="about-image-placeholder">
-          ع
-          <span data-ar="آل بهران" data-en="ALBHRAN">آل بهران</span>
-        </div>
+        <img src="profile.jpg" alt="عبدالرحمن آل بهران" class="about-photo">
       </div>
       <div class="about-content reveal">
         <h3 data-ar="مسار يجمع بين الإعلام والبيئة"
